@@ -1,0 +1,38 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Secrets and logs
+.env
+.env.*
+*.log
+
+# Build output
+build/
+dist/
+*.egg-info/
+
+# Local temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*~
+
+# Private/local files: never commit personal information or notes
+private/
+personal/
+local/
+*.local.md
+*.private.md
