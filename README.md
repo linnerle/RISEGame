@@ -6,7 +6,7 @@ Play Rock, Paper, Scissors against the computer using hand gestures and your web
 
 You need **Python 3.11** and a webcam.
 
-1. Get the project from the GitHub link your instructor shared: select **Code → Download ZIP** and extract it, or clone it with `git clone <repository-url> RISEGame`.
+1. Get the project from [RISEGame on GitHub](https://github.com/linnerle/RISEGame): select **Code → Download ZIP** and extract it, or clone it with `git clone https://github.com/linnerle/RISEGame.git`.
 2. Open a terminal in the extracted or cloned `RISEGame` folder. In VS Code, use **File → Open Folder** to open that same folder.
 3. Follow the setup steps below.
 
