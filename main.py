@@ -62,6 +62,7 @@ def draw_interface(
     frame,
     player_score,
     computer_score,
+    player_streak,
     detected_gesture,
     round_message,
     countdown=None,
@@ -301,9 +302,13 @@ def main():
                         player_score, computer_score = update_score(
                             outcome, player_score, computer_score
                         )
+                        if outcome =="win":
+                            player_streak += 1
+                        elif outcome == 'lose': 
+                            player_streak = 0
                         round_message = (
                             f"{get_result_message(outcome)} "
-                            f"You: {stable_gesture} | CPU: {computer_move} (random)"
+                            f"You: {stable_gesture} | CPU: {computer_move} (random) | Streak: {player_streak}"
                         )
                 else:
                     countdown = ceil(seconds_left)
@@ -324,6 +329,7 @@ def main():
             if key == ord("r"):
                 player_score = 0
                 computer_score = 0
+                player_streak = 0
                 round_message = "Scores reset. Press SPACE to play."
             if key == ord(" ") and countdown_end is None:
                 gesture_samples.clear()
